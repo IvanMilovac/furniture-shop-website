@@ -1,0 +1,115 @@
+.furniture__navbar {
+  width: 100%;
+  max-width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  margin: 0 auto;
+}
+
+.furniture__navbar-logo {
+  height: 37px;
+  width: 133px;
+  cursor: pointer;
+  display: grid;
+  place-items: center start;
+}
+
+.furniture__navbar-navigation {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.furniture__navbar-navigation p a,
+.furniture__navbar-mobile_menu p a {
+  font-family: var(--font-family-mont);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 20px;
+  color: #444444;
+}
+
+.furniture__navbar-navigation p a:hover {
+  color: #000000;
+}
+
+.furniture__navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.furniture__navbar-icons img {
+  cursor: pointer;
+}
+
+.furniture_navbar-mobile_hamburger {
+  display: none;
+}
+
+.furniture__navbar-mobile_menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  gap: 4.5rem;
+  width: 60%;
+  inset: 0 0 0 40%;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+
+.slide {
+  display: flex;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1024px) {
+  .furniture__navbar-navigation {
+    gap: 3rem;
+  }
+  .furniture__navbar-icons {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .furniture__navbar {
+    padding: 1.5rem 4rem;
+  }
+  .furniture__navbar-logo {
+    flex: 1;
+  }
+  .furniture__navbar-navigation {
+    display: none;
+  }
+  .furniture__navbar-icons {
+    flex: 1;
+    justify-content: center;
+  }
+  .furniture__navbar-icons img:last-child {
+    display: none;
+  }
+  .furniture_navbar-mobile_hamburger {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    z-index: 1000;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .furniture__navbar {
+    padding: 1rem 2.5rem;
+  }
+  .furniture__navbar-icons {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.furniture__features-list_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.furniture__features-list_item img {
+  width: 35px;
+  height: 32px;
+}
+
+.furniture__features-list_item h4 {
+  font-family: var(--font-family-sans);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #3d3d3f;
+}
+
+.furniture__features-list_item p {
+  font-family: var(--font-family-sans);
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #5f5f64;
+  max-width: 18rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .furniture__features-list_item {
+    text-align: center;
+  }
+  .furniture__features-list_item img {
+    margin: 0 auto;
+  }
+}
+
+.furniture__features-list_item p {
+  margin: 0 auto;
+}

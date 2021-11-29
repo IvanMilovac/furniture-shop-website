@@ -1,0 +1,240 @@
+.furniture__testimonials {
+  margin: 7rem 8.375rem;
+  background: #f4f6f6;
+  position: relative;
+  padding-bottom: 7.5rem;
+}
+
+.furniture__testimonials-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.furniture__testimonials-heading img {
+  width: 266px;
+}
+.furniture__testimonials-heading_text {
+  max-width: 500px;
+  align-self: flex-end;
+}
+.furniture__testimonials-heading_text h1 {
+  font-family: var(--font-family-noto);
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  color: #244d4d;
+  padding-bottom: 1rem;
+}
+
+.furniture__testimonials-heading_text p {
+  font-family: var(--font-family-sans);
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #3a4f65;
+}
+
+.furniture__testimonials-heading img:last-child {
+  width: 150px;
+  height: 150px;
+  margin: 210px 174px 0 0;
+}
+
+.furniture__testimonials-redcircle {
+  position: absolute;
+  left: 6.5rem;
+  bottom: 9rem;
+}
+
+.furniture__testimonials-content {
+  margin: 7.5rem 13.5rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 5rem;
+}
+
+.furniture__testimonials-content_imgs {
+  position: relative;
+}
+
+.furniture__testimonials-content_imgs img:first-child {
+  width: 308px;
+  height: 422px;
+}
+
+.furniture__testimonials-content_imgs img:last-child {
+  position: absolute;
+  top: 5rem;
+  left: -4rem;
+}
+
+.furniture__testimonials-content_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  padding-block: 2rem;
+}
+
+.furniture__testimonials-content_info img:first-child {
+  width: 133px;
+  height: 37px;
+}
+
+.furniture__testimonials-content_info h5 {
+  font-family: var(--font-family-sans);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #5e7388;
+}
+
+.furniture__testimonials-content_info h6 {
+  font-family: var(--font-family-sans);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #152137;
+}
+
+.furniture__testimonials-content_info p {
+  font-family: var(--font-family-sans);
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #647383;
+}
+
+.furniture__testimonials-content_info-btns {
+  width: 139px;
+  height: 61px;
+}
+
+@media screen and (max-width: 1320px) {
+  .furniture__testimonials-heading img {
+    width: 220px;
+    height: 220px;
+  }
+  .furniture__testimonials-heading_text {
+    max-width: 500px;
+    align-self: center;
+  }
+  .furniture__testimonials-heading img:last-child {
+    width: 150px;
+    height: 150px;
+    margin: 210px 0px 0 0;
+    visibility: hidden;
+  }
+  .furniture__testimonials-redcircle {
+    display: none;
+  }
+  .furniture__testimonials-content_imgs img:first-child {
+    width: 200px;
+    height: 274px;
+  }
+  .furniture__testimonials-content {
+    flex-direction: column;
+    margin: 3rem 10.5rem 0;
+    align-items: center;
+    gap: 1rem;
+  }
+  .furniture__testimonials-content_info {
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+    max-width: 100%;
+    flex: 1;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .furniture__testimonials {
+    margin: 7rem 6.5rem;
+  }
+  .furniture__testimonials-heading img {
+    width: 160px;
+    height: 160px;
+  }
+  .furniture__testimonials-heading_text {
+    padding: 2rem;
+  }
+  .furniture__testimonials-heading img:last-child {
+    display: none;
+  }
+  .furniture__testimonials-heading_text h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .furniture__testimonials-heading_text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .furniture__testimonials-content_imgs img:first-child {
+    width: 200px;
+    height: 274px;
+  }
+  .furniture__testimonials-content {
+    margin: 3rem 4rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .furniture__testimonials {
+    margin: 7rem 2rem;
+    position: relative;
+  }
+  .furniture__testimonials-heading img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .furniture__testimonials-heading_text {
+    padding: 2rem 3rem;
+    max-width: 100%;
+  }
+  .furniture__testimonials-heading_text h1 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 2rem;
+  }
+
+  .furniture__testimonials-heading_text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .furniture__testimonials-content_info {
+    padding: 0 0.7rem;
+  }
+  .furniture__testimonials-content_info h5 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .furniture__testimonials-content_info h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .furniture__testimonials-content_info p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .furniture__testimonials {
+    padding-bottom: 3.5rem;
+  }
+  .furniture__testimonials-content {
+    margin: 1rem 1.5rem 0;
+  }
+}
